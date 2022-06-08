@@ -1,3 +1,4 @@
+/* GENERAL STYLES */
 * {
     margin: 0;
 }
@@ -15,6 +16,12 @@ html {
     --primary-color: orange;
     --primary-color-alpha: 254, 165, 0;
     --secondary-color: aliceblue;
+    --link-color1: rgb(246, 87, 114);
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline!important;
 }
 
 /* THE NAV */
@@ -244,30 +251,29 @@ border: 1px solid rgba(255, 147, 167, 0.796);
 
 /* FOOTER */
 
-footer {
-    margin-top: 25rem;
-}
-
 .footer-group {
-    margin: 0 auto;
-    width: 60vw;
-    text-align: right;
-    background: linear-gradient(270deg, rgba(var(--site-color2rgba), 1), rgba(var(--site-color2rgba), 0) 40%);
-    padding: 3rem 2rem 3rem 0;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(var(--primary-color-alpha), 1), rgba(var(--primary-color-alpha), 0.5));
+    padding: 5rem 3rem;
 }
 .footer-link-group {
     display: flex;
-    justify-content: flex-end;
-    font-size: 2rem;
+    justify-content: space-around;
+    font-size: 1.3rem;
 }
 
 .footer-link-group a {
-    padding-left: 3rem;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color: var(--link-color1);
 }
 
 .footer-text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-top: 2rem;
+    text-align: center;
+    color: var(--secondary-color);
 }
 
 /* RESPONSIVITY */
