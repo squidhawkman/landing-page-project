@@ -67,7 +67,7 @@ button.navbar-toggler:focus {
     }
 }
 
-/* I have tried to apply this styles using BS classes but they would not work, because there is responsive font sizing by default, no responsive font size classes */
+/* I have tried to apply this style using BS classes but they would not work, because there is responsive font sizing by default, no responsive font size classes */
 
 @media (min-width: 992px) {
     .nav-item {
