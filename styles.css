@@ -2,39 +2,30 @@
     margin: 0;
 }
 
-*:root {
-    --site-color1: orange;
-    --site-color1rgba: 255, 166, 0;
-    --site-color2: rgb(195, 252, 252);
-    --site-color2rgba: 195, 252, 252;
-}
-
 html {
     font-size: 10px;
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: var(--site-color1);
+:root {
+    --site-color1: orange;
+    --site-color1rgba: 255, 166, 0;
+    --site-color2: rgb(195, 252, 252);
+    --site-color2rgba: 195, 252, 252;
+    --primary-color: orange;
+    --primary-color-alpha: 254, 165, 0;
+    --secondary-color: aliceblue;
 }
 
 /* THE NAV */
 
 /* colors */
-
-:root {
-    --primary-color: orange;
-    --primary-color-alpha: 254, 165, 0;
-    --secondary-color: aliceblue;
-    }
-    
     .bg-color-primary {
      background-color: var(--primary-color);
     }
     
     .text-color-primary {
-        color: var(--primary-color);
+        color: var(--primary-color)!important;
     }
     
     .bg-color-secondary {
@@ -52,7 +43,7 @@ a {
     }
     
     .nav-img {
-        height: 2.5rem;
+        height: 4rem;
     }
     
     .nav-cart {
@@ -94,7 +85,7 @@ a {
     
     @media (min-width: 992px) {
         .nav-item {
-            font-size: 1.15rem;
+            font-size: 1.8rem;
         }
         }
 
@@ -118,10 +109,16 @@ section {
     padding-bottom: 6rem;
 }
 
-h1 {
-    font-size: 5rem;
+h1#plumbus.big-font {
+    font-size: 3.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    h1#plumbus.big-font {
+        font-size: 5rem;
+    }
 }
 
 .intro-section input {
@@ -148,6 +145,7 @@ h1 {
 .intro-section img {
     margin-top: 4rem;
     margin-bottom: 5rem;
+    width: 50%;
 }
 
 
@@ -190,6 +188,13 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     column-gap: 2rem;
+}
+
+@media (max-width: 600px) {
+    .pricing-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
 }
 
 .pricing-group {
@@ -268,17 +273,6 @@ footer {
 /* RESPONSIVITY */
 
 @media (max-width: 1300px) {
-    nav,
-    nav img,
-    .nav-container {
-        height: 18vh;
-    }
-    .link-group {
-        width: 80vw;
-    }
-    nav img {
-        left: 0;
-    }
     .video-section iframe {
         width: 500px;
         height: 281.5px;
@@ -297,17 +291,6 @@ footer {
 /* FOR SMARTPHONES */
 
 @media (max-width: 600px) {
-    nav,
-    nav img,
-    .nav-container {
-        height: 12vh;
-    }
-    .link-group {
-        width: 80vw;
-    }
-    nav img {
-        left: 0;
-    }
     .video-section iframe {
         width: 325px;
         height: 178px;
