@@ -1,0 +1,76 @@
+/* colors */
+
+:root {
+--primary-color: orange;
+--primary-color-alpha: 254, 165, 0;
+--secondary-color: aliceblue;
+}
+
+.bg-color-primary {
+ background-color: var(--primary-color);
+}
+
+.text-color-primary {
+    color: var(--primary-color);
+}
+
+.bg-color-secondary {
+    background-color: var(--secondary-color);
+}
+
+.text-color-secondary {
+    color: var(--secondary-color);
+}
+
+button.navbar-toggler {
+    border: none;
+    text-align: left;
+    padding: 0;
+}
+
+.nav-img {
+    height: 2.5rem;
+}
+
+.nav-cart {
+    width: 30px;
+    text-align: right;
+}
+
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* why doesn't this work? */
+button.navbar-toggler:focus {
+    outline: 2px orange;
+    outline-offset: -2px;
+    box-shadow: none;
+}
+
+
+/* NAV BORDERS (doing this here because I don't know how to adjust Bootstrap default colors yet */
+.nav-link {
+    border-top: solid 1px rgba(var(--primary-color-alpha), 0.2);
+}
+
+.nav-link:last-child {
+    border-bottom: solid 1px rgba(var(--primary-color-alpha), 0.2);
+}
+
+@media (min-width: 768px) {
+    .nav-link,
+    .nav-link:last-child {
+        border-top: none;
+        border-bottom: none;
+    }
+}
+
+/* I have tried to apply this style using BS classes but they would not work, because there is responsive font sizing by default, no responsive font size classes */
+
+@media (min-width: 992px) {
+    .nav-item {
+        font-size: 1.15rem;
+    }
+    }
