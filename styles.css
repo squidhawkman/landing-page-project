@@ -113,7 +113,7 @@ section {
     background: linear-gradient(360deg, rgba(var(--site-color1rgba), 0.3), rgba(255, 255, 255, 0.8));
     width: 100%;
     margin-top: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 2rem;
 }
 
 h1#plumbus.big-font {
@@ -145,13 +145,13 @@ h1#plumbus.big-font {
     border-radius: 3px;
     border: 1px solid black;
     display: block;
-    margin: 0 auto;
-    margin-top: 1rem;
+    margin: 1rem auto 8rem;
+
 }
 
-.intro-section img {
+.intro-section .warrior {
     margin-top: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     width: 50%;
 }
 
@@ -305,3 +305,111 @@ border: 1px solid rgba(255, 147, 167, 0.796);
         width: 90%;
     }
 }  
+
+
+/* plumbus animation */
+
+.plumbusart {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.plumbusart div {
+    height: 240px;
+    position: relative;
+}
+
+.plumbusart img {
+    position: absolute;
+}
+
+.plumbusR {
+    animation-name: scrolling;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    top: 0px;
+    left: 0px;
+    animation-timing-function: linear;
+    height: 167px;
+    width: 100px;
+}
+.plumbusL {
+    animation-name: scrolling;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    top: 0px;
+    left: 0px;
+    animation-timing-function: linear;
+    height: 167px;
+    width: 100px;
+}
+
+.delay1 {
+    animation-delay: -1s;
+}
+.delay2 {
+    animation-delay: -2s;
+}
+.delay3 {
+    animation-delay: -3s;
+}
+.delay4 {
+    animation-delay: -4s;
+}
+.delay5 {
+    animation-delay: -5s;
+}
+.delay6 {
+    animation-delay: -6s;
+}
+.delay7 {
+    animation-delay: -7s;
+}
+.delay8 {
+    animation-delay: -8s;
+}
+.delay9 {
+    animation-delay: -9s;
+}
+.delay10 {
+    animation-delay: -10s;
+}
+.delay11 {
+    animation-delay: -11s;
+}
+.delay12 {
+    animation-delay: -12s;
+}
+.delay13 {
+    animation-delay: -13s;
+}
+.delay14 {
+    animation-delay: -14s;
+}
+.delay15 {
+    animation-delay: -15s;
+}
+.delay16 {
+    animation-delay: -16s;
+}
+.delay17 {
+    animation-delay: -17s;
+}
+.delay18 {
+    animation-delay: -18s;
+}
+.delay19 {
+    animation-delay: -19s;
+}
+.delay20 {
+    animation-delay: -20s;
+}
+
+@keyframes scrolling {
+    from {transform: translateX(-200px) rotate(360deg);}
+    to {transform: translateX(1500px) rotate(0deg);}
+  }
